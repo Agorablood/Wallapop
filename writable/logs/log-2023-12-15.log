@@ -1,0 +1,69 @@
+CRITICAL - 2023-12-15 07:58:40 --> Invalid file: "alta_articulos.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alta_articulos.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alta_articulos', [], true)
+ 3 APPPATH/Controllers/Articulos.php(9): view('alta_articulos')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulo()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 08:14:53 --> Invalid file: "alta_articulos.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alta_articulos.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alta_articulos', [], true)
+ 3 APPPATH/Controllers/Articulos.php(9): view('alta_articulos')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulo()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 08:14:59 --> Invalid file: "alta_articulos.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alta_articulos.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alta_articulos', [], true)
+ 3 APPPATH/Controllers/Articulos.php(9): view('alta_articulos')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulo()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 08:16:11 --> Invalid file: "alta_articulos.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('alta_articulos.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('alta_articulos', [], true)
+ 3 APPPATH/Controllers/Articulos.php(9): view('alta_articulos')
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulo()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 09:01:26 --> Undefined variable: nombrePagina
+in APPPATH/Views/templates/header.php on line 13.
+ 1 APPPATH/Views/templates/header.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nombrePagina', '/Applications/MAMP/htdocs/daw/ci_prueba_bd/app/Views/templates/header.php', 13, [])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/daw/ci_prueba_bd/app/Views/templates/header.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH/Controllers/Articulos.php(9): view('templates/header')
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulo()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 09:05:09 --> Undefined variable: nombre
+in APPPATH/Views/templates/header.php on line 15.
+ 1 APPPATH/Views/templates/header.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nombre', '/Applications/MAMP/htdocs/daw/ci_prueba_bd/app/Views/templates/header.php', 15, [...])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/daw/ci_prueba_bd/app/Views/templates/header.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(15): view('templates/header', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Usuarios->registro()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 09:05:22 --> Undefined variable: nombreSeccion
+in APPPATH/Views/templates/header.php on line 15.
+ 1 APPPATH/Views/templates/header.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nombreSeccion', '/Applications/MAMP/htdocs/daw/ci_prueba_bd/app/Views/templates/header.php', 15, [])
+ 2 SYSTEMPATH/View/View.php(228): include('/Applications/MAMP/htdocs/daw/ci_prueba_bd/app/Views/templates/header.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH/Controllers/Articulos.php(9): view('templates/header')
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Articulos->alta_articulo()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
