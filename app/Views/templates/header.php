@@ -10,4 +10,4 @@
     <a href="<?php echo base_url() ?>articulos/lista_articulos">Ver tienda</a>
     <a href="<?php echo base_url() ?>usuarios/registro">Alta de usuario</a>
     <a href="<?php echo base_url() ?>articulos/alta_articulo">Alta de artículo</a>
-    <h1>Gestión del artículo <?php echo $nombre ?></h1>
+    <h1>Gestión del artículo: <?php echo $nombre ?></h1>
