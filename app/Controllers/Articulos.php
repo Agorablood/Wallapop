@@ -56,4 +56,8 @@ class Articulos extends BaseController
         $data['titulo'] = 'Detalle del artículo';
         return view('templates/header', $data).view('articulo');
     }
+    public function home(){
+        $data['nombre'] = 'Articulos';
+        return view('templates/header', $data) . view('home');
+    }
 }
