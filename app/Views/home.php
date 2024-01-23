@@ -73,6 +73,10 @@ a:hover {
   list-style: none;
   padding: 0;
   margin: 0 0 40px 0;
+  margin-left: 150px;
+
+  
+  
 }
 
 .tab-group:after {
@@ -98,6 +102,7 @@ a:hover {
 .tab-group li a:hover {
   background: #117a6f;
   color: #ffffff;
+  
 }
 
 .tab-group .active a {
