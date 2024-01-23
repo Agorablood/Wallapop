@@ -1,4 +1,3 @@
-
 <?php
 
 use app\Models\UsuariosModel;
@@ -39,19 +38,20 @@ helper('form') ?>
 ?>
 <script>
   function mostrarOcultarContraseña() {
-        var campoContraseña = document.getElementById("contraseña1");
-        var campoContraseña1 = document.getElementById("contraseña2");
+    var campoContraseña = document.getElementById("contraseña1");
+    var campoContraseña1 = document.getElementById("contraseña2");
 
-        // Cambiar el tipo de campo de contraseña
-        if (campoContraseña.type === "password") {
-            campoContraseña.type = "text";
-            campoContraseña1.type = "text";
+    // Cambiar el tipo de campo de contraseña
+    if (campoContraseña.type === "password") {
+      campoContraseña.type = "text";
+      campoContraseña1.type = "text";
 
-        } else {
-            campoContraseña.type = "password";
-            campoContraseña1.type = "password";
-        }
+    } else {
+      campoContraseña.type = "password";
+      campoContraseña1.type = "password";
     }
+  }
+
   function validarFormulario() {
     var password = document.getElementById("contraseña1").value;
     var repetirPassword = document.getElementById("contraseña2").value;
