@@ -22,8 +22,9 @@ class Usuarios extends BaseController
     {
         $data = [];
         $data['nombre'] = $this->request->getPost('nombre');
-        $data['direccion'] = $this->request->getPost('direccion');
-        $data['dni'] = $this->request->getPost('dni');
+        $data['contraseña1'] = $this->request->getPost('contraseña1');
+        $data['contraseña1'] = $this->request->getPost('contraseña1');
+        
 
         $modelo = model(UsuariosModel::class);
         $modelo->save($data);
