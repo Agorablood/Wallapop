@@ -4,10 +4,13 @@ namespace App\Controllers;
 
 use App\Models\ArticulosModel;
 
+
+
 class Articulos extends BaseController
 {
     public function alta_articulo(): string
     {
+        
         $data['nombre'] = 'Articulos';
         return view('templates/header', $data) . view('alta_articulo');
     }
@@ -46,7 +49,7 @@ class Articulos extends BaseController
         $modelo = model(ArticulosModel::class);
         $data['articulos'] = $modelo->findAll();
         $data['titulo'] = 'Listado de artículos';
-        return view('templates/header', $data).view('articulo');
+        return view('templates/header', $data).view('lista_articulo');
     }
 
     public function mostrar ($id_articulo)

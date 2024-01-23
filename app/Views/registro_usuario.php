@@ -175,12 +175,28 @@ textarea {
   text-align: right;
 }
 </style>
-    <form action="" method="post">
+<?php helper('form') ?>
+<div class="col-5 mx-auto">
+    <?php
+    if (isset($guardado)) {
+    ?>
+        <p>Los datos se han guardado correctamente</p>
+        <a href="<?php echo base_url() ?>">Volver</a>
+    <?php
+    } else {
+      
+    ?>
+</div>
+<?php echo validation_list_errors() ?>
+    <form action="<?php echo base_url() ?>Usuarios/guardar" method="post" enctype="multipart/form-data">
         
-        <input placeholder="Nombre" type="text" name="nombre"/>
-        <input placeholder="Dirección" type="text" name="direccion" />
-        <input placeholder="DNI" type="text" name="dni" />
+        <input placeholder="Nombre" type="text" name="nombre" required autocomplete="off"/>
+        <input placeholder="Dirección" type="text" name="direccion" required autocomplete="off"/>
+        <input placeholder="DNI" type="text" name="dni" required autocomplete="off"/>
         <input type="submit" value="Enviar">
     </form>
 </body>
+<?php
+    }
+?>
 </html>
