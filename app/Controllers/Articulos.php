@@ -8,6 +8,12 @@ use App\Models\ArticulosModel;
 
 class Articulos extends BaseController
 {
+    public function prueba(){
+        return view("pruebaAjax");
+    }
+    public function pruebaAjax(){
+        echo "funciona";
+    }
     public function alta_articulo(): string
     {
         

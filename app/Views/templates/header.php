@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba BBDD</title>
-    <link rel="icon" type="image/jpg" href="logo/aguilawallapop.jpg"/>
+    <link rel="shortcut icon" href="public/logo/aguilawallapop.jpg" type="image/x-icon">
     <link rel="stylesheet" href="<?php echo base_url("css/estilos.css")?>"/>
     <script src="<?php echo base_url('js/jquery.js')?>">
     </script>
