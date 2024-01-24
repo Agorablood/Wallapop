@@ -1,6 +1,6 @@
 body{
     background-color: #bfd7aa;
-    
+
 }
 a {
   text-decoration: none;
@@ -10,6 +10,17 @@ a {
 
 a:hover {
   color: #117a6f;
+}
+#titulo_registro{
+    
+    color: white;
+}
+#nuevo_usuario{
+    text-align: center;
+    cursor: pointer;
+}
+#show_password{
+
 }
 
 .form {
@@ -64,7 +75,7 @@ a:hover {
 
 h1 {
   text-align: center;
-  color: #214801;
+  color: #ffffff;
   font-weight: 300;
   margin: 0 0 40px;
 }
@@ -133,7 +144,7 @@ textarea {
 
 .top-row > div {
   float: left;
-  width: 48%;
+  width: 100%;
   margin-right: 4%;
 }
 
@@ -167,5 +178,4 @@ textarea {
 
 .forgot {
   margin-top: -20px;
-  text-align: right;
 }

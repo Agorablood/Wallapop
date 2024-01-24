@@ -10,12 +10,27 @@ use App\Models\UsuariosModel;
  */
 class Usuarios extends BaseController
 {
+    // public function login(){
+    //     $usuario = new UsuariosModel();
+    //     if($this->request->getmethod() == 'post'){
+    //         $respuesta = $usuario->login(
+    //             $this->request->getPost('nombre'),
+    //             $this->request->getPost('password')
+    //             );
+    //             return redirect()->to(base_url().'/Articulos/alta_articulo');  //red
+    //             }else{
+    //                 $datos['head']=view('templates/header');
+    //                 echo view('usuarios/login',$datos);
+    //                 }
+                    
+
+    // }
     public function registro_usuario(): string
     {
         $modelo = model(UsuariosModel::class);
         $data['nombre'] = 'Usuarios';
 
-        return view('templates/header', $data) . view('registro_usuario');
+        return view('templates/header', $data) . view('home');
     }
     
     public function guardar()
@@ -31,7 +46,7 @@ class Usuarios extends BaseController
         // //obtenemos los datos validados
         $data['guardado'] = true;
         $data['titulo'] = 'registro de usuario';
-        return view('templates/header', $data) . view('registro_usuario');
+        return view('templates/header', $data) . view('home');
     }
     public function mostrarTodo()
     {
