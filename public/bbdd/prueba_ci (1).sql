@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-01-2024 a las 08:28:54
+-- Tiempo de generación: 26-01-2024 a las 14:33:25
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -29,28 +29,27 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `articulos` (
   `id` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
   `nombre` varchar(20) NOT NULL,
   `marca` varchar(20) NOT NULL,
-  `precio` int(11) NOT NULL
+  `precio` int(11) NOT NULL,
+  `imagen` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `articulos`
 --
 
-INSERT INTO `articulos` (`id`, `nombre`, `marca`, `precio`) VALUES
-(1, 'asdafs', 'asfasf', 123),
-(2, 'Epokhe', 'Iphone', 1000),
-(3, 'qqweqwe', 'qweqwe', 0),
-(4, 'Bicicleta', 'La mejor', 394),
-(5, 'javi', 'humilde', 0),
-(6, 'Álvaro', 'humilde', 0),
-(7, 'aasd', 'aasd', 0),
-(8, 'Jordan', 'humilde', 0),
-(9, 'diez', 'qqe', 0),
-(10, 'x', 'x', 0),
-(11, 'x', 'x', 0),
-(12, 'x', 'x', 0);
+INSERT INTO `articulos` (`id`, `id_usuario`, `nombre`, `marca`, `precio`, `imagen`) VALUES
+(18, 101, 'bicicleta', 'bmx', 34, '1706261111_4f32ff62b69110f16b22.jpg'),
+(19, 101, 'coche', 'nissan', 150000, '1706261247_63680cf1fb29b245f64f.jpg'),
+(20, 0, 'skate', 'carrefour', 50, '1706267028_ea79412b42e367a00763.png'),
+(21, 101, 'avion ', 'boing 787', 500000, '1706267216_e3b5328ce767c55e1ea7.png'),
+(22, 101, 'avion', 'boing 747', 5250000, '1706272669_ba6c0bfd76164754337c.png'),
+(23, 101, 'bmx', 'bmx', 20, '1706272712_aebe5e453def7b2af714.jpg'),
+(24, 101, 'avion', 'boing747', 200000, '1706273915_70079de6d7297adb03ce.png'),
+(25, 103, 'coche', 'nissan', 20, '1706275730_c478b5b160acd69c13bc.jpg'),
+(26, 104, 'skate', 'xd', 200, '1706275834_8a12aee3da4451219ff0.png');
 
 -- --------------------------------------------------------
 
@@ -69,26 +68,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `contraseña1`) VALUES
-(1, 'asd', 'asd'),
-(2, 'asd', 'asd'),
-(3, 'asd', 'asd'),
-(4, 'Erwin', 'Madrid'),
-(5, 'asd', ''),
-(6, 'Erwin', ''),
-(7, 'Erwin', ''),
-(8, 'Erwin', ''),
-(9, 'Erwin', ''),
-(10, 'asd', ''),
-(11, 'asd', ''),
-(12, 'asd', ''),
-(13, 'asd', ''),
-(14, 'asd', ''),
-(15, 'erwin', '1234'),
-(16, 'asd', '1234'),
-(17, 'qwe', '1234'),
-(18, 'Erwin Llanos', '12345'),
-(19, 'asd', 'asd'),
-(20, 'Erwin', 'asdd');
+(103, 'Erwin', 'qwe'),
+(104, 'alvaro', 'qwe'),
+(105, 'Javi', 'qwe');
 
 --
 -- Índices para tablas volcadas
@@ -114,13 +96,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
