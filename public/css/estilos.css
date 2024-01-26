@@ -2,10 +2,19 @@ body{
     background-color: #bfd7aa;
 
 }
+
+img {
+  width: 30%; 
+  margin: 10px; 
+  
+}
 a {
   text-decoration: none;
   color: #1ab188;
   transition: 0.5s ease;
+}
+.error{
+  color: red;
 }
 
 a:hover {
@@ -19,9 +28,7 @@ a:hover {
     text-align: center;
     cursor: pointer;
 }
-#show_password{
 
-}
 
 .form {
   background: rgba(19, 35, 47, 0.9);

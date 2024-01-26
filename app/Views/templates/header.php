@@ -11,7 +11,6 @@
 </head>
 <body>
 
+    <a href="<?php echo base_url() ?>articulos/lista_articulos">Inicio</a>
     <a href="<?php echo base_url() ?>articulos/home">Log-in/registrer</a>
     <a href="<?php echo base_url() ?>articulos/alta_articulo">Alta de artículo</a>
-    <a href="<?php echo base_url() ?>articulos/home">Inicio</a>
-    <h1>Gestión de <?php echo $nombre ?></h1>

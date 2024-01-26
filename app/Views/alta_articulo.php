@@ -42,5 +42,14 @@
 <?php
   }
 ?>
+<script>
 
+  function destruirSesion() {
+    session_start();
+    session_destroy();
+    exit();
+  }
+  
+
+</script>
 </html>

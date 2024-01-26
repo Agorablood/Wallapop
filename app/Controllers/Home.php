@@ -11,4 +11,13 @@ class Articulos extends BaseController
         $data['nombre'] = 'LOGIN/REGISTRER';
         return view('templates/header', $data) . view('home');
     }
+    
+
 }
+
+
+
+
+
+
+

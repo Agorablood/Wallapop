@@ -30,18 +30,23 @@ class Articulos extends BaseController
     // }
     public function guardar()
     {
+        $session = session();
+
+
         $data = [];
         $data['nombre'] = $this->request->getPost('nombre'); 
         $data['marca'] = $this->request->getPost('marca'); 
         $data['precio'] = $this->request->getPost('precio'); 
-
         $imagen = $this->request->getFile('imagen');
         $nombreimagen = $imagen->getRandomName();
         // $nombreimagen = time();
         $imagen->move('../public/imagenes', $nombreimagen);
+        $data['imagen'] = $nombreimagen;
 
         $modelo = model(ArticulosModel::class);
         // var_dump($modelo);
+        $usuario = $session->get('usuario');
+        $data['id_usuario'] = $session->get('id_logg');
         $modelo->save($data);
         //obtenemos los datos validados
         $data['guardado'] = true;
@@ -50,7 +55,7 @@ class Articulos extends BaseController
 
        
     }
-    public function mostrarTodo()
+    public function lista_articulos()
     {
         $modelo = model(ArticulosModel::class);
         $data['articulos'] = $modelo->findAll();
@@ -69,4 +74,11 @@ class Articulos extends BaseController
         $data['nombre'] = 'Articulos';
         return view('templates/header', $data) . view('home');
     }
+    function destruirSesion(){
+        $session = session();
+        $session->destroy();
+        exit();
+        return base_url('Articulos/home');
+    }
+    
 }

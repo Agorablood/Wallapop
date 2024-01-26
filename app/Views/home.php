@@ -2,20 +2,10 @@
 
 use app\Models\UsuariosModel;
 
-helper('form') ?>
-<div class="col-5 mx-auto">
-  <?php
-  if (isset($guardado)) {
-  ?>
-    <p>Los datos se han guardado correctamente</p>
+helper('form');
 
-  <?php
-  } else {
-
-  ?>
-</div>
-<?php echo validation_list_errors() ?>
-
+?>
+<button href="<?php echo base_url()?>Articulos/destruirSesion">cerrar sesion</button>
 <div class="form">
 
   <ul class="tab-group">
@@ -26,26 +16,32 @@ helper('form') ?>
 
   <div class="tab-content">
     <div id="login">
-      <h1>Bienvenido de vuelta!</h1>
-
-      <form action="alta_articulo" method="post">
+      <div class="error">
+        <h1>Bienvenido de vuelta!</h1>
+        <?php
+        if (isset($error_login)) {
+          echo '<p>Error en el inicio de sesión</p>';
+        }
+        ?>
+      </div>
+      <form action="<?php echo base_url('Usuarios/validarUsuario') ?>" method="post" enctype="multipart/form-data">
 
         <div class="field-wrap">
           <label>
             Usuario<span class="req">*</span>
           </label>
-          <input type="texto" required autocomplete="off" />
+          <input type="texto" name="nombre" required autocomplete="off" />
         </div>
 
         <div class="field-wrap">
           <label>
             Contraseña<span class="req">*</span>
           </label>
-          <input type="password" required autocomplete="off" />
+          <input id="contraseña3" type="password" name="contraseña1" required autocomplete="off" />
         </div>
         <p id="nuevo_usuario" class="forgot"><a onclick="cambiarFormulario('signup')">¿Nuevo usuario? Regístrate aquí.</a></p>
 
-
+        <button type="button" onclick="mostrarOcultarContraseña()">Mostrar Contraseña</button>
         <button class="button button-block" />Log-in</button>
 
       </form>
@@ -82,7 +78,8 @@ helper('form') ?>
 
         <button id="show_password" type="button" onclick="mostrarOcultarContraseña()">Mostrar Contraseña</button>
 
-        <button type="submit" class="button button-block" />Empieza a vender/comprar</button>
+        <button type="submit" class="button button-block"> Empieza a vender/comprar</button>
+
 
       </form>
 
@@ -92,9 +89,7 @@ helper('form') ?>
   </div>
 
 </div>
-<?php
-  }
-?>
+
 <script>
   $('.form').find('input, textarea').on('keyup blur focus', function(e) {
     var $this = $(this),
@@ -135,14 +130,17 @@ helper('form') ?>
   function mostrarOcultarContraseña() {
     var campoContraseña = document.getElementById("contraseña1");
     var campoContraseña1 = document.getElementById("contraseña2");
+    var campoContraseña2 = document.getElementById("contraseña3");
 
     // Cambiar el tipo de campo de contraseña
     if (campoContraseña.type === "password") {
       campoContraseña.type = "text";
       campoContraseña1.type = "text";
+      campoContraseña2.type = "text";
     } else {
       campoContraseña.type = "password";
       campoContraseña1.type = "password";
+      campoContraseña2.type = "password";
     }
   }
 
@@ -179,5 +177,13 @@ helper('form') ?>
       $("#login").show();
       console.log("Cambiando a formulario: " + formulario)
     }
+
+    function destruirSesion() {
+    session_start();
+    session_destroy();
+    exit();
+}
+
+
   }
 </script>
