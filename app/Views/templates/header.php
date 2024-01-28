@@ -40,6 +40,8 @@
                         // El usuario está logeado
                 ?>
                         <a id="usuario-logeado" class="btn btn-warning">Sesión iniciada como: <?php echo $usuarioActivo; ?></a>
+                        <a id="usuario-deslogeado" href="<?php echo base_url(); ?>Usuarios/destruirSesion" class="navbar-brand btn btn-outline-danger">Cerrar sesión</a>
+
                 <?php
                     } else {
                         // Las claves de sesión no están presentes, realiza alguna acción (puede ser una redirección)

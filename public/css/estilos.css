@@ -20,7 +20,12 @@ a {
 #usuario-logeado{
   display: inline-block;
   position: fixed;
-  margin-left: 75rem;
+  margin-left: 67rem;
+}
+#usuario-deslogeado{
+  display: inline-block;
+  position: fixed;
+  margin-left: 83rem;
 }
 
 /* #cerrar-sesion{
