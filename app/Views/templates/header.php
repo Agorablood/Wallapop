@@ -36,14 +36,8 @@
                 }
                 ?>
                 <?php if (isset($usuarioActivo)) : ?>
-                    <p>Sesión iniciada como: <?php echo $usuarioActivo; ?></p>
+                    <p class="navbar-text text-light">Sesión iniciada como: <?php echo $usuarioActivo; ?></p>
                 <?php endif; ?>
             <?php endif; ?>
-
-            
-            <?php if (isset($usuarioActivo)): ?>
-                <p class="navbar-text text-light">Sesión iniciada como: <?php echo $usuario_logeado; ?></p>
-            <?php endif; ?>
-            <a id="cerrar-sesion" href="<?php echo base_url()?>Articulos/destruirSesion" class="navbar-brand btn btn-outline-danger">Cerrar sesión</a>
         </div>
     </nav>

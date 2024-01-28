@@ -1717,3 +1717,264 @@ INFO - 2024-01-28 15:32:43 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-28 15:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-28 15:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-28 15:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 15:34:32 --> Undefined variable $usuario_logeado
+in APPPATH\Views\templates\header.php on line 45.
+ 1 APPPATH\Views\templates\header.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario_logeado', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Views\\templates\\header.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('A:\\Xampp\\htdocs\\Wallapop\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH\Controllers\Articulos.php(74): view('templates/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->home()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-28 15:34:51 --> Undefined variable $usuario_activo
+in APPPATH\Views\templates\header.php on line 45.
+ 1 APPPATH\Views\templates\header.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario_activo', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Views\\templates\\header.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('A:\\Xampp\\htdocs\\Wallapop\\app\\Views\\templates\\header.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('templates/header', [], true)
+ 5 APPPATH\Controllers\Articulos.php(74): view('templates/header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->home()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 15:38:20 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ar...', 0)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 A:\Xampp\htdocs\Wallapop\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 A:\Xampp\htdocs\Wallapop\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save(Array)
+#9 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+#10 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#11 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-28 15:38:20 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articulos` (`nombre`, `marca`, `precio`, `imagen`, `id_usuario`) VALUES (:nombre:, :marca:, :precio:, :imagen:, :id_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 15:38:37 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ar...', 0)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 A:\Xampp\htdocs\Wallapop\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 A:\Xampp\htdocs\Wallapop\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save(Array)
+#9 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+#10 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#11 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-28 15:38:37 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articulos` (`nombre`, `marca`, `precio`, `imagen`, `id_usuario`) VALUES (:nombre:, :marca:, :precio:, :imagen:, :id_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 15:38:51 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ar...', 0)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 A:\Xampp\htdocs\Wallapop\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 A:\Xampp\htdocs\Wallapop\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save(Array)
+#9 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+#10 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#11 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-28 15:38:51 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articulos` (`nombre`, `marca`, `precio`, `imagen`, `id_usuario`) VALUES (:nombre:, :marca:, :precio:, :imagen:, :id_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 15:39:39 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ar...', 0)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 A:\Xampp\htdocs\Wallapop\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 A:\Xampp\htdocs\Wallapop\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save(Array)
+#9 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+#10 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#11 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-28 15:39:39 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articulos` (`nombre`, `marca`, `precio`, `imagen`, `id_usuario`) VALUES (:nombre:, :marca:, :precio:, :imagen:, :id_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 15:40:11 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ar...', 0)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 A:\Xampp\htdocs\Wallapop\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 A:\Xampp\htdocs\Wallapop\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save(Array)
+#9 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+#10 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#11 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-28 15:40:11 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articulos` (`nombre`, `marca`, `precio`, `imagen`, `id_usuario`) VALUES (:nombre:, :marca:, :precio:, :imagen:, :id_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 15:40:43 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ar...', 0)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 A:\Xampp\htdocs\Wallapop\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 A:\Xampp\htdocs\Wallapop\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save(Array)
+#9 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+#10 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#11 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-28 15:40:43 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articulos` (`nombre`, `marca`, `precio`, `imagen`, `id_usuario`) VALUES (:nombre:, :marca:, :precio:, :imagen:, :id_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-28 15:42:33 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ar...', 0)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 A:\Xampp\htdocs\Wallapop\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 A:\Xampp\htdocs\Wallapop\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save(Array)
+#9 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+#10 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#11 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-28 15:42:33 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `articulos` (`nombre`, `marca`, `precio`, `imagen`, `id_usuario`) VALUES (:nombre:, :marca:, :precio:, :imagen:, :id_usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Articulos.php(50): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->guardar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-28 15:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 15:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

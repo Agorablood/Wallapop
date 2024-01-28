@@ -88,7 +88,7 @@ class Usuarios extends BaseController
 
             // Utilizar una clave más descriptiva para el ID del usuario en la sesión
             $session->set('usuario_activo', $nombre);
-            $session->set('usuario_id', $resultado[0]['id']);
+            $session->set('id_logg', $resultado[0]['id']);
 
             return view('templates/header') . view('alta_articulo');
         } else {
@@ -96,8 +96,7 @@ class Usuarios extends BaseController
             return view('templates/header') . view('home', $datos);
         }
     }
-    // En tu controlador
-    // En tu controlador (por ejemplo, LogeadoController.php)
+    
     public function mostrarVista()
     {
         $session = session();
@@ -107,7 +106,7 @@ class Usuarios extends BaseController
             $usuarioId = $session->get('usuario_id');
 
             // Cargar la vista del header con los datos del usuario
-            return view('templates/header_logeado', ['usuarioActivo' => $usuarioActivo, 'usuarioId' => $usuarioId]);
+            return view('templates/header', ['usuarioActivo' => $usuarioActivo, 'usuarioId' => $usuarioId]);
         } else {
             // Redirigir a la página de inicio de sesión o realizar alguna acción
             return redirect()->to(base_url('ruta_de_inicio_de_sesion'));

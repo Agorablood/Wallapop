@@ -30,7 +30,6 @@ class Articulos extends BaseController
     // }
     public function guardar()
     {
-        $modelo = model(ArticulosModel::class);
         $session = session();
 
 
@@ -44,12 +43,14 @@ class Articulos extends BaseController
         $imagen->move('../public/imagenes', $nombreimagen);
         $data['imagen'] = $nombreimagen;
 
+        $modelo = model(ArticulosModel::class);
         // var_dump($modelo);
-        $usuario = $session->get('usuario_logeado');
-        $data['id'] = $session->get('usuario_logeado');
+        $usuario = $session->get('usuario');
+        $data['id_usuario'] = $session->get('id_logg');
         $modelo->save($data);
         //obtenemos los datos validados
         $data['guardado'] = true;
+        $data['titulo'] = 'alta de articulo';
        return view('templates/header', $data).view('alta_articulo');
 
        
@@ -73,11 +74,14 @@ class Articulos extends BaseController
         $data['nombre'] = 'Articulos';
         return view('templates/header', $data) . view('home');
     }
-    function destruirSesion(){
+    public function destruirSesion()
+    {
         $session = session();
         $session->destroy();
-        exit();
-        return base_url('Articulos/home');
+        
+        // Redireccionar a la página de inicio
+        return redirect()->to(base_url('Articulos/home'));
     }
+    
     
 }
