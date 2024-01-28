@@ -5,25 +5,6 @@ use app\Models\UsuariosModel;
 helper('form');
 
 ?>
-<?php if (session()->get('usuario_logeado')): ?>
-    <?php
-    
-    $session = session();
-    if ($session->has('usuario_activo') && $session->has('usuario_id')) {
-        // El usuario está logeado
-        $usuarioActivo = $session->get('usuario_activo');
-        $usuarioId = $session->get('usuario_id');
-        
-    } else {
-        
-    }
-    ?>
-<?php endif; ?>
-
-<?php if (isset($usuarioActivo)): ?>
-    <p>Sesión iniciada como: <?php echo $usuarioActivo; ?></p>
-<?php endif; ?>
-
 
 <div class="form">
 
@@ -197,6 +178,7 @@ helper('form');
       session_destroy();
       return base_url('Articulos/home');
     }
+
 
   }
 </script>

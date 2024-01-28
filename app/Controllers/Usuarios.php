@@ -96,21 +96,34 @@ class Usuarios extends BaseController
             return view('templates/header') . view('home', $datos);
         }
     }
-    
+
+    // En tu controlador
+    // En tu controlador (por ejemplo, LogeadoController.php)
+    // En tu controlador
     public function mostrarVista()
-{
-    $session = session();
+    {
+        $session = session();
 
-    if ($session->has('usuario_activo') && $session->has('usuario_id')) {
-        $usuarioActivo = $session->get('usuario_activo');
-        $usuarioId = $session->get('usuario_id');
+        if ($session->has('usuario_activo') && $session->has('usuario_id')) {
+            $usuarioActivo = $session->get('usuario_activo');
+            $usuarioId = $session->get('usuario_id');
 
-        // Cargar la vista del head con los datos del usuario
-        return view('templates/head', ['usuarioActivo' => $usuarioActivo, 'usuarioId' => $usuarioId]);
-    } else {
-        // Redirigir a la página de inicio de sesión o realizar alguna acción
-        return redirect()->to(base_url('home'));
+            // Cargar la vista del header con los datos del usuario
+            return view('templates/header', ['usuarioActivo' => $usuarioActivo, 'usuarioId' => $usuarioId]);
+        } else {
+            // Redirigir a la página de inicio de sesión o realizar alguna acción
+            return redirect()->to(base_url('home'));
+        }
     }
-}
 
+
+
+    public function destruirSesion()
+    {
+        $session = session();
+        $session->destroy();
+
+        // Redireccionar a la página de inicio
+        return redirect()->to(base_url('Articulos/Home'));
+    }
 }

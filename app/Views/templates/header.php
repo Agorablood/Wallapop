@@ -24,12 +24,34 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar articulo" aria-label="Search">
                     <a href="<?php echo base_url() ?>articulos/lista_articulos" class="btn btn-outline-success" href="#">Buscar</a>
-                    
+
                 </form>
-            </div>
-            
-            <?php if (isset($usuarioActivo)) : ?>
-                <p>Sesión iniciada como: <?= $usuarioActivo; ?></p>
-            <?php endif; ?>
-        </div>
+                <?php
+                $session = session();
+
+                // Obtener valores de la sesión
+                $usuarioActivo = $session->get('usuario_activo');
+                $usuarioId = $session->get('id_logg');
+
+                // Verificar si el usuario está logeado
+                if ($session->get('usuario_logeado')) {
+                    // Verificar si existen las claves correctas en la sesión
+                    if ($session->has('usuario_activo') && $session->has('id_logg')) {
+                        // El usuario está logeado
+                ?>
+                        <p>Sesión iniciada como: <?php echo $usuarioActivo; ?></p>
+                <?php
+                    } else {
+                        // Las claves de sesión no están presentes, realiza alguna acción (puede ser una redirección)
+                        // Por ejemplo:
+                        // redirect()->to(base_url('home'));
+                    }
+                }
+                ?>
+
+
+
+                <a id="cerrar-sesion" href="<?php echo base_url(); ?>Articulos/destruirSesion" class="navbar-brand btn btn-outline-danger">Cerrar sesión</a>
+
+
     </nav>
