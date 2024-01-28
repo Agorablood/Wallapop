@@ -600,3 +600,128 @@ INFO - 2024-01-26 13:35:32 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-26 13:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-26 13:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-26 13:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-26 17:20:15 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'prueba_ci' in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'prueba_ci', 3306, '', 0)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 A:\Xampp\htdocs\Wallapop\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(61): CodeIgniter\BaseModel->findAll()
+#7 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->lista_articulos()
+#8 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#9 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'prueba_ci' in A:\Xampp\htdocs\Wallapop\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 A:\Xampp\htdocs\Wallapop\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 A:\Xampp\htdocs\Wallapop\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 A:\Xampp\htdocs\Wallapop\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 A:\Xampp\htdocs\Wallapop\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 A:\Xampp\htdocs\Wallapop\app\Controllers\Articulos.php(61): CodeIgniter\BaseModel->findAll()
+#6 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(942): App\Controllers\Articulos->lista_articulos()
+#7 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+#8 A:\Xampp\htdocs\Wallapop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 A:\Xampp\htdocs\Wallapop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-26 17:20:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'prueba_ci'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articulos`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Articulos.php(61): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->lista_articulos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-26 17:20:28 --> Undefined array key "imagen"
+in APPPATH\Views\lista_articulos.php on line 8.
+ 1 APPPATH\Views\lista_articulos.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Views\\lista_articulos.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('A:\\Xampp\\htdocs\\Wallapop\\app\\Views\\lista_articulos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('lista_articulos', [], true)
+ 5 APPPATH\Controllers\Articulos.php(63): view('lista_articulos')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->lista_articulos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-26 17:23:09 --> Undefined array key "imagen"
+in APPPATH\Views\lista_articulos.php on line 8.
+ 1 APPPATH\Views\lista_articulos.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "imagen"', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Views\\lista_articulos.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('A:\\Xampp\\htdocs\\Wallapop\\app\\Views\\lista_articulos.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('lista_articulos', [], true)
+ 5 APPPATH\Controllers\Articulos.php(63): view('lista_articulos')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Articulos->lista_articulos()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulos))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-26 17:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-26 17:32:14 --> Undefined array key 0
+in APPPATH\Controllers\Usuarios.php on line 84.
+ 1 APPPATH\Controllers\Usuarios.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Controllers\\Usuarios.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuarios->validarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-26 17:33:48 --> Undefined array key 0
+in APPPATH\Controllers\Usuarios.php on line 84.
+ 1 APPPATH\Controllers\Usuarios.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Controllers\\Usuarios.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuarios->validarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-26 17:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-26 17:37:22 --> Undefined array key 0
+in APPPATH\Controllers\Usuarios.php on line 84.
+ 1 APPPATH\Controllers\Usuarios.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Controllers\\Usuarios.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuarios->validarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-26 17:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-26 17:37:44 --> Undefined array key 0
+in APPPATH\Controllers\Usuarios.php on line 84.
+ 1 APPPATH\Controllers\Usuarios.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Controllers\\Usuarios.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuarios->validarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-26 17:38:45 --> Undefined array key 0
+in APPPATH\Controllers\Usuarios.php on line 84.
+ 1 APPPATH\Controllers\Usuarios.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Controllers\\Usuarios.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuarios->validarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-26 17:39:26 --> Undefined array key 0
+in APPPATH\Controllers\Usuarios.php on line 84.
+ 1 APPPATH\Controllers\Usuarios.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Controllers\\Usuarios.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuarios->validarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-26 17:39:58 --> Undefined array key 0
+in APPPATH\Controllers\Usuarios.php on line 84.
+ 1 APPPATH\Controllers\Usuarios.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Controllers\\Usuarios.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuarios->validarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-26 17:40:05 --> Undefined array key 0
+in APPPATH\Controllers\Usuarios.php on line 84.
+ 1 APPPATH\Controllers\Usuarios.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'A:\\Xampp\\htdocs\\Wallapop\\app\\Controllers\\Usuarios.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuarios->validarUsuario()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-26 17:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-26 17:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-26 17:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

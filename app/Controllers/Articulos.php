@@ -30,6 +30,7 @@ class Articulos extends BaseController
     // }
     public function guardar()
     {
+        $modelo = model(ArticulosModel::class);
         $session = session();
 
 
@@ -43,14 +44,12 @@ class Articulos extends BaseController
         $imagen->move('../public/imagenes', $nombreimagen);
         $data['imagen'] = $nombreimagen;
 
-        $modelo = model(ArticulosModel::class);
         // var_dump($modelo);
-        $usuario = $session->get('usuario');
-        $data['id_usuario'] = $session->get('id_logg');
+        $usuario = $session->get('usuario_logeado');
+        $data['id'] = $session->get('usuario_logeado');
         $modelo->save($data);
         //obtenemos los datos validados
         $data['guardado'] = true;
-        $data['titulo'] = 'alta de articulo';
        return view('templates/header', $data).view('alta_articulo');
 
        

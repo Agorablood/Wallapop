@@ -1,11 +1,12 @@
 body{
-    background-color: #bfd7aa;
+    background-color: #ece9e9;
 
 }
 
 img {
-  width: 30%; 
-  margin: 10px; 
+  width: 450px;
+  height: 300px; 
+
   
 }
 a {
@@ -17,12 +18,19 @@ a {
   color: red;
 }
 
+#cerrar-sesion{
+  display: none;
+}
+
+.imagenes{
+  display: inline-block;
+  text-align: center;
+  border-style: groove;
+  height: auto;
+}
+
 a:hover {
   color: #117a6f;
-}
-#titulo_registro{
-    
-    color: white;
 }
 #nuevo_usuario{
     text-align: center;
@@ -39,11 +47,13 @@ a:hover {
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
-.tab-group {
+.tab-group{
   list-style: none;
   padding: 0;
-  margin: 0 0 40px 0;
-  margin-left: 150px;
+  margin: 2px 0px 4px 20px;
+    margin-left: 20px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 .tab-group:after {
@@ -64,6 +74,7 @@ a:hover {
   text-align: center;
   cursor: pointer;
   transition: 0.5s ease;
+  
 }
 
 .tab-group li a:hover {
@@ -80,9 +91,15 @@ a:hover {
   display: none;
 }
 
-h1 {
+.titulo-login {
   text-align: center;
-  color: #ffffff;
+  color: #55ac72;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+.titulo-registro {
+  text-align: center;
+  color: #55ac72;
   font-weight: 300;
   margin: 0 0 40px;
 }
@@ -185,4 +202,8 @@ textarea {
 
 .forgot {
   margin-top: -20px;
+  color: white;
+}
+.btn-outline-warning{
+text-align: right;
 }

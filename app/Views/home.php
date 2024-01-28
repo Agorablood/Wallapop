@@ -5,7 +5,26 @@ use app\Models\UsuariosModel;
 helper('form');
 
 ?>
-<button href="<?php echo base_url()?>Articulos/destruirSesion">cerrar sesion</button>
+<?php if (session()->get('usuario_logeado')): ?>
+    <?php
+    
+    $session = session();
+    if ($session->has('usuario_activo') && $session->has('usuario_id')) {
+        // El usuario está logeado
+        $usuarioActivo = $session->get('usuario_activo');
+        $usuarioId = $session->get('usuario_id');
+        
+    } else {
+        
+    }
+    ?>
+<?php endif; ?>
+
+<?php if (isset($usuarioActivo)): ?>
+    <p>Sesión iniciada como: <?php echo $usuarioActivo; ?></p>
+<?php endif; ?>
+
+
 <div class="form">
 
   <ul class="tab-group">
@@ -17,14 +36,16 @@ helper('form');
   <div class="tab-content">
     <div id="login">
       <div class="error">
-        <h1>Bienvenido de vuelta!</h1>
-        <?php
-        if (isset($error_login)) {
-          echo '<p>Error en el inicio de sesión</p>';
-        }
-        ?>
+        <h1 class="titulo-login">😎 BIENVENIDO 😁</h1>
+        <?php if (isset($error_login)) : ?>
+          <div class="mensaje-error"><?php echo $error_login; ?></div>
+        <?php elseif (isset($usuario_logeado)) : ?>
+          <div class="Bienvenida">Bienvenido, <?php echo $usuario_logeado; ?></div>
+        <?php endif; ?>
+
       </div>
       <form action="<?php echo base_url('Usuarios/validarUsuario') ?>" method="post" enctype="multipart/form-data">
+
 
         <div class="field-wrap">
           <label>
@@ -37,18 +58,18 @@ helper('form');
           <label>
             Contraseña<span class="req">*</span>
           </label>
-          <input id="contraseña3" type="password" name="contraseña1" required autocomplete="off" />
+          <input id="contraseña3" type="password" name="contraseña1" required autocomplete="off" /><br>
         </div>
         <p id="nuevo_usuario" class="forgot"><a onclick="cambiarFormulario('signup')">¿Nuevo usuario? Regístrate aquí.</a></p>
+        <button type="button" class="btn btn-outline-warning" onclick="mostrarOcultarContraseña()">Mostrar Contraseña</button>
 
-        <button type="button" onclick="mostrarOcultarContraseña()">Mostrar Contraseña</button>
         <button class="button button-block" />Log-in</button>
 
       </form>
 
     </div>
     <div id="signup">
-      <h1 id="titulo_registro">Registrate gratis</h1>
+      <h1 class="titulo-registro">😊 REGISTRATE 😈</h1>
 
       <form action="<?php echo base_url() ?>Usuarios/guardar" method="post" enctype="multipart/form-data" onsubmit="return validarFormulario()">
 
@@ -76,9 +97,9 @@ helper('form');
         </div>
 
 
-        <button id="show_password" type="button" onclick="mostrarOcultarContraseña()">Mostrar Contraseña</button>
+        <button id="show_password" type="button" class="btn btn-outline-warning" onclick="mostrarOcultarContraseña()">Mostrar Contraseña</button>
 
-        <button type="submit" class="button button-block"> Empieza a vender/comprar</button>
+        <button type="submit" class="button button-block">Registrarte</button>
 
 
       </form>
@@ -89,6 +110,9 @@ helper('form');
   </div>
 
 </div>
+
+
+
 
 <script>
   $('.form').find('input, textarea').on('keyup blur focus', function(e) {
@@ -156,16 +180,6 @@ helper('form');
     return true; // Permitir que el formulario se envíe
   }
 
-  //Espera 2000 milisegundos (2 segundos) y luego redirige
-
-  // setTimeout(function() {
-  //   if (sesionIniciada=true) {
-  //     window.location.href = "home";
-  //   } else {
-  //     alert('No se pudo iniciar sesión correctamente');
-  //     window.location.href = '<?php echo base_url('Articulos/alta_articulo') ?>';
-  //   }
-  // });
 
   function cambiarFormulario(formulario) {
     if (formulario === 'signup') {
@@ -179,11 +193,10 @@ helper('form');
     }
 
     function destruirSesion() {
-    session_start();
-    session_destroy();
-    exit();
-}
-
+      session_start();
+      session_destroy();
+      return base_url('Articulos/home');
+    }
 
   }
 </script>

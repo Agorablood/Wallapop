@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 use App\Models\UsuariosModel;
 
+$hasher = new \CodeIgniter\I18n\Time();
+
+
 /**
  * @class Usuarios
  * Implementa las funciones necesarias para la gestión de usuarios
@@ -32,7 +35,6 @@ class Usuarios extends BaseController
 
         return view('templates/header', $data) . view('home');
     }
-
     public function guardar()
     {
         $data = [];
@@ -55,7 +57,6 @@ class Usuarios extends BaseController
         $data['titulo'] = 'Listado de usuarios';
         return view('templates/header', $data) . view('usuario');
     }
-
     public function mostrar($id_usuario)
     {
         $modelo = model(UsuariosModel::class);
@@ -68,11 +69,11 @@ class Usuarios extends BaseController
         $data['nombre'] = 'Usuarios';
         return view('templates/header', $data) . view('home');
     }
+
     public function validarUsuario()
     {
-
         $modelo = model(UsuariosModel::class);
-        $modelo->select('id,nombre,contraseña1');
+        $modelo->select('id, nombre, contraseña1');
 
         $nombre = $this->request->getPost('nombre');
         $contraseña = $this->request->getPost('contraseña1');
@@ -81,17 +82,35 @@ class Usuarios extends BaseController
         $modelo->where('contraseña1', $contraseña);
         $resultado = $modelo->find();
 
-        $id = $resultado[0]['id'];
-
-        //guardamos en sesion el usuario 
-        if ($resultado) {
+        // Verificar si el resultado no está vacío antes de acceder a sus elementos
+        if (!empty($resultado)) {
             $session = session();
+
+            // Utilizar una clave más descriptiva para el ID del usuario en la sesión
             $session->set('usuario_activo', $nombre);
-            $session->set('id_logg', $id);
+            $session->set('usuario_id', $resultado[0]['id']);
+
             return view('templates/header') . view('alta_articulo');
         } else {
             $datos['error_login'] = "El nombre o la contraseña son incorrectos";
             return view('templates/header') . view('home', $datos);
+        }
+    }
+    // En tu controlador
+    // En tu controlador (por ejemplo, LogeadoController.php)
+    public function mostrarVista()
+    {
+        $session = session();
+
+        if ($session->has('usuario_activo') && $session->has('usuario_id')) {
+            $usuarioActivo = $session->get('usuario_activo');
+            $usuarioId = $session->get('usuario_id');
+
+            // Cargar la vista del header con los datos del usuario
+            return view('templates/header_logeado', ['usuarioActivo' => $usuarioActivo, 'usuarioId' => $usuarioId]);
+        } else {
+            // Redirigir a la página de inicio de sesión o realizar alguna acción
+            return redirect()->to(base_url('ruta_de_inicio_de_sesion'));
         }
     }
 }
