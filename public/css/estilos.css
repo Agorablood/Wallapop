@@ -17,6 +17,11 @@ a {
 .error{
   color: red;
 }
+#usuario-logeado{
+  display: inline-block;
+  position: fixed;
+  margin-left: 75rem;
+}
 
 /* #cerrar-sesion{
   display: none;

@@ -34,24 +34,18 @@
                 $usuarioId = $session->get('id_logg');
 
                 // Verificar si el usuario está logeado
-                if ($session->get('usuario_logeado')) {
+                if ($session->get('id_logg')) {
                     // Verificar si existen las claves correctas en la sesión
                     if ($session->has('usuario_activo') && $session->has('id_logg')) {
                         // El usuario está logeado
                 ?>
-                        <p>Sesión iniciada como: <?php echo $usuarioActivo; ?></p>
+                        <a id="usuario-logeado" class="btn btn-warning">Sesión iniciada como: <?php echo $usuarioActivo; ?></a>
                 <?php
                     } else {
                         // Las claves de sesión no están presentes, realiza alguna acción (puede ser una redirección)
                         // Por ejemplo:
-                        // redirect()->to(base_url('home'));
+                        redirect()->to(base_url('home'));
                     }
                 }
                 ?>
-
-
-
-                <a id="cerrar-sesion" href="<?php echo base_url(); ?>Articulos/destruirSesion" class="navbar-brand btn btn-outline-danger">Cerrar sesión</a>
-
-
     </nav>
