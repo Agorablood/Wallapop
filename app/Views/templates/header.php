@@ -18,26 +18,18 @@
             <a href="<?php echo base_url() ?>articulos/lista_articulos" class="navbar-brand btn btn-outline-success">Inicio</a>
             <a href="<?php echo base_url() ?>articulos/home" class="navbar-brand btn btn-outline-success">Login/Register</a>
             <a href="<?php echo base_url() ?>articulos/alta_articulo" class="navbar-brand btn btn-outline-success">Alta articulo</a>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
+
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar articulo" aria-label="Search">
                     <a href="<?php echo base_url() ?>articulos/lista_articulos" class="btn btn-outline-success" href="#">Buscar</a>
+                    
                 </form>
             </div>
-            <?php if (session()->get('usuario_logeado')) : ?>
-                <?php
-                $session = session();
-                if ($session->has('usuario_activo') && $session->has('usuario_id')) {
-                    // El usuario está logeado
-                    $usuarioActivo = $session->get('usuario_activo');
-                    $usuarioId = $session->get('usuario_id');
-                }
-                ?>
-                <?php if (isset($usuarioActivo)) : ?>
-                    <p class="navbar-text text-light">Sesión iniciada como: <?php echo $usuarioActivo; ?></p>
-                <?php endif; ?>
+            
+            <?php if (isset($usuarioActivo)) : ?>
+                <p>Sesión iniciada como: <?= $usuarioActivo; ?></p>
             <?php endif; ?>
         </div>
     </nav>

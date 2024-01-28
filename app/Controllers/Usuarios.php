@@ -98,18 +98,19 @@ class Usuarios extends BaseController
     }
     
     public function mostrarVista()
-    {
-        $session = session();
+{
+    $session = session();
 
-        if ($session->has('usuario_activo') && $session->has('usuario_id')) {
-            $usuarioActivo = $session->get('usuario_activo');
-            $usuarioId = $session->get('usuario_id');
+    if ($session->has('usuario_activo') && $session->has('usuario_id')) {
+        $usuarioActivo = $session->get('usuario_activo');
+        $usuarioId = $session->get('usuario_id');
 
-            // Cargar la vista del header con los datos del usuario
-            return view('templates/header', ['usuarioActivo' => $usuarioActivo, 'usuarioId' => $usuarioId]);
-        } else {
-            // Redirigir a la página de inicio de sesión o realizar alguna acción
-            return redirect()->to(base_url('ruta_de_inicio_de_sesion'));
-        }
+        // Cargar la vista del head con los datos del usuario
+        return view('templates/head', ['usuarioActivo' => $usuarioActivo, 'usuarioId' => $usuarioId]);
+    } else {
+        // Redirigir a la página de inicio de sesión o realizar alguna acción
+        return redirect()->to(base_url('home'));
     }
+}
+
 }
