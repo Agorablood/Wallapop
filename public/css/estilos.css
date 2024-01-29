@@ -17,15 +17,19 @@ a {
 .error{
   color: red;
 }
+#logo-header{
+  width: 160px;
+  height: 110px;
+}
 #usuario-logeado{
   display: inline-block;
   position: fixed;
-  margin-left: 67rem;
+  margin-left: 47rem;
 }
 #usuario-deslogeado{
   display: inline-block;
   position: fixed;
-  margin-left: 83rem;
+  margin-left: 61rem;
 }
 
 /* #cerrar-sesion{
